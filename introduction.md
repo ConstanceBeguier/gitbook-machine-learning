@@ -52,13 +52,16 @@ $recall = TP/(TP + FN )$
 $specificity = T N/(T N + F P )$
 $precision = TP/(TP + FP )$
 avec $TP$ (resp. $TN$ ) le nombre de vrais positifs (resp. négatifs), $FP$ (resp. $FN$) le nombre de faux positifs (resp. négatifs) 
+
+![Sensibility](images/F1score.jpg)
+
   - **F1-score :** $2 \cdot precision \cdot recall/(precision + recall)$
   - **Courbe de ROC (Receiver Operator Characteristic:** courbe du pourcentage de vrais positifs (sur l’axe y) par rapport au pourcentage de
 faux positifs (sur l’axe x). Cette courbe permet de comparer différents paramétrages d’un même classifieur ou de comparer différents classifieurs. L’aire sous la courbe ROC (area under the curve AUC) est une bonne métrique représentant le classifieur.
   - **Minkowski metric:** $L_k(x,y)=\sum _i (|x_i - y_i |^k)^{1/k}$
 	  -	k = 1 : distance de Manhattan
 	  -	k = 2 : distance Euclidienne
-	  -	Si $average(X_1 , ..., X_n ) = argmin_Y \sum_i dist(X_i , Y )$, alors cette valeur est la médiane dans pour k = 1 et la moyenne pour k = 2.
+	  -	Si $average(X_1 , ..., X_n ) = argmin_Y \sum_i dist(X_i,Y)$, alors cette valeur est la médiane dans pour k = 1 et la moyenne pour k = 2.
 
 ## Quelques rappels de probabilité
   - **Bayes’ rule :** $P (C_i |X_j ) = \frac{P(X_j | C_i) \cdot P(C_i)}{P(X_j)}$ car $P(X_j |C_i ) = P (X_j , C_i )/P (C_i )$
@@ -78,3 +81,4 @@ faux positifs (sur l’axe x). Cette courbe permet de comparer différents param
   - **Gaussienne ou distribution normale :** $p(x) = \frac{1}{\sqrt{2 \pi \sigma}} exp( \frac{-(x-\mu)^2}{2 \sigma^2})$
   - **Central Limit Theorem :** convergence en loi de la somme d’une suite de
 variables aléatoires vers la loi normale
+
