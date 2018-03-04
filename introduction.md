@@ -56,39 +56,38 @@ fois et conserver l’apprentissage qui a obtenu le meilleur score de validation
   la diagonale de la matrice représentent le nombre d’éléments correctement classifiés. L’accuracy est donc égale à la somme des valeurs de la
   diagonale divisée par la somme de tous les éléments.
 * **Sensibilité \(recall\), Spécificité, Précision :** 
-  $$recall = TP/\(TP + FN \)$$
-  $$specificity = T N/\(T N + F P \)$$
-  $$precision = TP/\(TP + FP \)$$
+  $$recall = TP/(TP + FN )$$
+  $$specificity = TN/(TN + FP )$$
+  $$precision = TP/(TP + FP )$$
   avec $$TP$$ \(resp. $$TN$$ \) le nombre de vrais positifs \(resp. négatifs\), $$FP$$ \(resp. $$FN$$\) le nombre de faux positifs \(resp. négatifs\) 
 
 ![](/images/F1score.png)
 
-* **F1-score :** $$2 \cdot precision \cdot recall/\(precision + recall\)$$
+* **F1-score :** $$2 \cdot precision \cdot recall/(precision + recall)$$
 * **Courbe de ROC \(Receiver Operator Characteristic:** courbe du pourcentage de vrais positifs \(sur l’axe y\) par rapport au pourcentage de
   faux positifs \(sur l’axe x\). Cette courbe permet de comparer différents paramétrages d’un même classifieur ou de comparer différents classifieurs. L’aire sous la courbe ROC \(area under the curve AUC\) est une bonne métrique représentant le classifieur.
-* **Minkowski metric:** $$L\_k\(x,y\)=\sum \_i \(\|x\_i - y\_i \|^k\)^{1/k}$$
+* **Minkowski metric:** $$L_k(x,y)=\sum _i (|x_i - y_i |^k)^{1/k}$$
   * k = 1 : distance de Manhattan
   * k = 2 : distance Euclidienne
-  * Si $$average\(X\_1 , ..., X\_n \) = argmin\_Y \sum\_i dist\(X\_i,Y\)$$, alors cette valeur est la médiane dans pour k = 1 et la moyenne pour k = 2.
+  * Si $$average(X_1 , ..., X_n ) = argmin_Y \sum_i dist(X_i,Y)$$, alors cette valeur est la médiane dans pour k = 1 et la moyenne pour k = 2.
 
 ## Quelques rappels de probabilité
 
-* **Bayes’ rule :** $$P \(C\_i \|X\_j \) = \frac{P\(X\_j \| C\_i\) \cdot P\(C\_i\)}{P\(X\_j\)}$$ car $$P\(X\_j \|C\_i \) = P \(X\_j , C\_i \)/P \(C\_i \)$$
-* **Posterior probability:** $$P \(C\_i \|X\_j \)$$
-* **Prior probability:** $$P \(C\_i \)$$
-* **Class conditionnal probability:** $$P \(X\_j \|C\_i \)$$
-* **Maximum a posteriori \(MAP\):** $$argmax\_i P\(C\_i \|X\)$$ : quelle est la classe la plus probable pour une entrée donnée \(vecteur de features\)
-* **Naive Bayes’ Classifier:** MAP en suppossant Q que les features sont indépendantes entre elles. Donc $$P\(X\|C\_i \) = \prod\_j P\(X\_j \|C\_i \)$$. Et donc $$argmax\_i P\(C\_i \| X\) = argmax\_i P\(C\_i\)$$ et $$\prod\_j P\(X\_j \| C\_i\) / P\(X\) = argmax\_i  P\(C\_i\) \prod\_j P\(X\_j \| C\_i\)$$
+* **Bayes’ rule :** $$P (C_i |X_j ) = \frac{P(X_j | C_i) \cdot P(C_i)}{P(X_j)}$$ car $$P(X_j |C_i ) = P (X_j , C_i )/P (C_i )$$
+* **Posterior probability:** $$P (C_i |X_j )$$
+* **Prior probability:** $$P (C_i )$$
+* **Class conditionnal probability:** $$P (X_j |C_i )$$
+* **Maximum a posteriori \(MAP\):** $$argmax_i P(C_i |X)$$ : quelle est la classe la plus probable pour une entrée donnée \(vecteur de features\)
+* **Naive Bayes’ Classifier:** MAP en suppossant Q que les features sont indépendantes entre elles. Donc $$P(X|C_i ) = \prod_j P(X_j |C_i )$$. Et donc $$argmax_i P(C_i | X) = argmax_i P(C_i)$$ et $$\prod_j P(X_j | C_i) / P(X) = argmax_i  P(C_i) \prod_j P(X_j | C_i)$$
 
 ## Quelques rappels de statistiques
 
-* **Espérance \(expectation\) :** similaire à une moyenne en prenant en compte les probabilités : $$E\[f \(X\)\] = \sum\_i f \(X\_i \) \cdot P \(X\_i \)$$
-* **Variance :** mesure de dispersion : $$var\(X\) = E\[X-E\[X\]\]^2 = E\[X\_{\mu}\]^2$$ où $$\mu$$ est la moyenne/espérance de $$X$$
-* **Ecart type \(standard deviation std\) :** $$\sigma = \sqrt{var\(X\)}$$
-* **Covariance :** $$cov\(X,Y\)=E\[\(X-E\[X\]\)\(Y-E\[Y\]\)\]$$. Si $$X$$ et $$Y$$ sont indépendantes, $$cov\(X, Y \) = 0$$.
-* **Gaussienne ou distribution normale :** $$p\(x\) = \frac{1}{\sqrt{2 \pi \sigma}} exp\( \frac{-\(x-\mu\)^2}{2 \sigma^2}\)$$
-* **Central Limit Theorem :** convergence en loi de la somme d’une suite de
-  variables aléatoires vers la loi normale
+* **Espérance \(expectation\) :** similaire à une moyenne en prenant en compte les probabilités : $$E[f (X)] = \sum_i f (X_i ) \cdot P (X_i )$$
+* **Variance :** mesure de dispersion : $$var(X) = E[X-E[X]]^2 = E[X_{\mu}]^2$$ où $$\mu$$ est la moyenne/espérance de $$X$$
+* **Ecart type \(standard deviation std\) :** $$\sigma = \sqrt{var(X)}$$
+* **Covariance :** $$cov(X,Y)=E[(X-E[X])(Y-E[Y])]$$. Si $$X$$ et $$Y$$ sont indépendantes, $$cov\(X, Y \) = 0$$.
+* **Gaussienne ou distribution normale :** $$p(x) = \frac{1}{\sqrt{2 \pi \sigma}} exp( \frac{-(x-\mu)^2}{2 \sigma^2})$$
+* **Central Limit Theorem :** convergence en loi de la somme d’une suite de variables aléatoires vers la loi normale
 
 
 
