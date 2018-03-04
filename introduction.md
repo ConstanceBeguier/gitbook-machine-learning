@@ -85,7 +85,7 @@ fois et conserver l’apprentissage qui a obtenu le meilleur score de validation
 * **Espérance \(expectation\) :** similaire à une moyenne en prenant en compte les probabilités : $$E[f (X)] = \sum_i f (X_i ) \cdot P (X_i )$$
 * **Variance :** mesure de dispersion : $$var(X) = E[X-E[X]]^2 = E[X_{\mu}]^2$$ où $$\mu$$ est la moyenne/espérance de $$X$$
 * **Ecart type \(standard deviation std\) :** $$\sigma = \sqrt{var(X)}$$
-* **Covariance :** $$cov(X,Y)=E[(X-E[X])(Y-E[Y])]$$. Si $$X$$ et $$Y$$ sont indépendantes, $$cov\(X, Y \) = 0$$.
+* **Covariance :** $$cov(X,Y)=E[(X-E[X])(Y-E[Y])]$$. Si $$X$$ et $$Y$$ sont indépendantes, $$cov(X, Y ) = 0$$.
 * **Gaussienne ou distribution normale :** $$p(x) = \frac{1}{\sqrt{2 \pi \sigma}} exp( \frac{-(x-\mu)^2}{2 \sigma^2})$$
 * **Central Limit Theorem :** convergence en loi de la somme d’une suite de variables aléatoires vers la loi normale
 
