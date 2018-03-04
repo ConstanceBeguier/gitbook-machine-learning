@@ -13,7 +13,7 @@
 
 **Apprentissage par renforcement:** apprentissage d'un bon comportement à partir d'observations/récompenses. A chaque étape, l'algorithme propose une action et le système donne un score à cette action \(indiquant si l'action est bénéfique ou pas\) sans indiquer comment améliorer ce score.
 
-* Q-learning, Hidden Markov Model \(Viterbi et ...\)
+* Q-learning, Hidden Markov Model \(Viterbi et Baum Welch\)
 
 **Apprentissage évolutionniste:** le principe s'inspire de la théorie de l'évolution pour résoudre des problèmes diverses. La théorie de l'évolution repose sur le fait que les organismes s'adaptent pour améliorer leur taux de survie et celui de leurs descendants
 
