@@ -61,6 +61,8 @@ fois et conserver l’apprentissage qui a obtenu le meilleur score de validation
   $precision = TP/\(TP + FP \)$
   avec $TP$ \(resp. $TN$ \) le nombre de vrais positifs \(resp. négatifs\), $FP$ \(resp. $FN$\) le nombre de faux positifs \(resp. négatifs\) 
 
+$$specify = x^2_1$$
+
 ![](/images/F1score.png)
 
 * **F1-score :** $2 \cdot precision \cdot recall/\(precision + recall\)$
