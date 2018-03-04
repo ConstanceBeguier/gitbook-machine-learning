@@ -12,3 +12,4 @@
 * [Apprentissage avec des arbres](tree.md)
 * [Apprentissage non supervisé](non_supervised.md)
 * [Echantillonage à partir de distribution de probabilités](sampling.md)
+* [Hidden Markov Models](hmm.md)
