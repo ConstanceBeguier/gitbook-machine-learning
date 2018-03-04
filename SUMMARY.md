@@ -7,3 +7,4 @@
 * [Réduction de dimensions](dimension_reduction.md)
 * [Apprentissage probabilistique](proba_learning.md)
 * [Support Vector Machine SVM](svm.md)
+* [Algorithmes évolutionnistes](evolutionary_algo.md)
