@@ -12,8 +12,8 @@ Dans la suite, X est une matrice contenant l'ensemble des données dont chaque l
 scatter  matrix pour la classe $$i$$: $$S_i = \sum_{x \in C_i} (x-\mu_i)(x-\mu_i)^T$$
 within-class  scatter: $$S_W = mean(S_i)$$
 between classes scatter: $$S_B = \sum_i (\mu_c - \mu) ( \mu_c - \mu)^T$$
- - Objectif: trouver la projection $$W$$ qui permet d'avoir le quotient $$(W^T S_B W)/(W^T S_W W)$$ aussi grand que possible 
- - Méthode (spectral decomposition): 
+  - Objectif: trouver la projection $$W$$ qui permet d'avoir le quotient $$(W^T S_B W)/(W^T S_W W)$$ aussi grand que possible 
+  - Méthode (spectral decomposition): 
 	 - si $$w$$ est un vecteur propre de $$S_W^{-1} S_B$$, le quotient sera égal à sa valeur propre
 	 - Calculer les vecteurs propres et valeurs propres de $$S_W^{-1} S_B$$
 	 - Conserver uniquement les vecteurs propres des valeurs propres les plus grandes pour construire la matrice de projection $$W$$ (chaque ligne est un vecteur propre)
