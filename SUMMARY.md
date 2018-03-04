@@ -10,3 +10,5 @@
 * [Algorithmes évolutionnistes](evolutionary_algo.md)
 * [Apprentissage par renforcement](reinforcement.md)
 * [Apprentissage avec des arbres](tree.md)
+* [Apprentissage non supervisé](non_supervised.md)
+* [Echantillonage à partir de distribution de probabilités](sampling.md)
