@@ -1,5 +1,8 @@
 {
     "gitbook": ">=3.2.0",
+    "styles": {
+    	"website": "assets/continuum/cms.css"
+    },
     "plugins": ["katex"],
     "pluginsConfig": {
 	"github": {
