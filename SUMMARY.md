@@ -9,3 +9,4 @@
 * [Support Vector Machine SVM](svm.md)
 * [Algorithmes évolutionnistes](evolutionary_algo.md)
 * [Apprentissage par renforcement](reinforcement.md)
+* [Apprentissage avec des arbres](tree.md)
