@@ -61,7 +61,7 @@ fois et conserver l’apprentissage qui a obtenu le meilleur score de validation
   $$precision = TP/(TP + FP )$$
   avec $$TP$$ \(resp. $$TN$$ \) le nombre de vrais positifs \(resp. négatifs\), $$FP$$ \(resp. $$FN$$\) le nombre de faux positifs \(resp. négatifs\) 
 
-![](/images/F1score.png)
+![](/images/F1score_new.png)
 
 * **F1-score :** $$2 \cdot precision \cdot recall/(precision + recall)$$
 * **Courbe de ROC \(Receiver Operator Characteristic:** courbe du pourcentage de vrais positifs \(sur l’axe y\) par rapport au pourcentage de
