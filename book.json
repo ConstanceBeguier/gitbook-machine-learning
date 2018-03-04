@@ -1,3 +1,9 @@
 {
-    "plugins": ["katex"]
+    "gitbook": ">=3.2.0",
+    "plugins": ["katex"],
+    "pluginsConfig": {
+	"github": {
+            "url": "https://github.com/ConstanceMorel/gitbook-machine-learning"
+        }
+    }
 }
