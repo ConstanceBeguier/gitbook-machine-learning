@@ -3,7 +3,10 @@
     "styles": {
     	"website": "assets/continuum/cms.css"
     },
-    "plugins": ["katex"],
+    "plugins": [
+	    "katex",
+	    "github@2.0.0"
+    ],
     "pluginsConfig": {
 	"github": {
             "url": "https://github.com/ConstanceMorel/gitbook-machine-learning"
