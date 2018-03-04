@@ -12,7 +12,7 @@ Uniquement pour résoudre les problèmes linéairement séparables: possibilité
 	  -  Normaliser les entrées (avant la séparation de la BDD en apprentissage, validation, test) afin d'avoir une moyenne à zéro et une variance à 1 sur chaque coordonnée
 	  - Sélection des features: en apprenant sur toutes les features sauf 1 et en comparant les performances du classifieur ou en faisant une réduction de dimension (par exemple, PCA)
 
-  **Régression linéaire** La grande différence par rapport au perceptron est le format de la sortie. Avec le perceptron, la sortie est une catégorie appartenant à un espace fini et dans le cas de la régression, la sortie est un réel. 
+**Régression linéaire** La grande différence par rapport au perceptron est le format de la sortie. Avec le perceptron, la sortie est une catégorie appartenant à un espace fini et dans le cas de la régression, la sortie est un réel. 
     - **Entrées**: couples $$(X,y)$$ avec $$y \in \mathbb{R}$$
     - **Objectif**: Trouver $$\beta$$ tel que pour une nouvelle donnée $$X$$, nous avons la sortie $$y=X \beta$$
     - **Erreur**: least square error: $$E = (y-X\beta)(y-X\beta)^T$$
