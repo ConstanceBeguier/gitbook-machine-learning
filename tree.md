@@ -20,4 +20,3 @@
 	  - **Méthode** Pour chaque arbre, créer une nouvelle base d'apprentissage en prenant au hasard avec remise (doublons autorisés) des données de la base d'apprentissage. Utiliser un algorithme simple pour construire un arbre à partir de chacune des nouvelles bases de données.
 
 Exemple: **random forest**: bagging dont la construction de l'arbre est effectué en prenant aléatoirement pour chaque nouveau noeud un sous-ensemble des features restantes , puis en sélectionnant la meilleure feature dans ce sous-ensemble à l'aide de l'entropie ou de l'indice de Gini
-

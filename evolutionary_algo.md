@@ -13,7 +13,7 @@ Voici les principales étapes des algorithmes génétiques:
 	  - Tournois: des pairs aléatoires d'individus sont créées et le meilleur de chaque pair est conservé
   - Nouvelle génération créée de manière itérative
 
-## Population-Based  Incremental  Learning (PBIL)
+## Population-Based Incremental Learning (PBIL)
 
 Similaire à l'algorithme génétique mais la population d'individus est remplacée par un vecteur de probabilité représentant l'individu idéal (un individu est représenté par un vecteur binaire)
 

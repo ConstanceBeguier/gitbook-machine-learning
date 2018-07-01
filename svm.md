@@ -19,4 +19,3 @@ Si nous voulons faire une $$N$$ classification, il suffit de faire $$N$$  SVM qu
 **SVM régression**
 
 Le problème consiste à trouver un hyperplan pour lequel toutes les données se situent dans un hyper-cylindre centré sur cet hyperplan et de rayon $$\epsilon$$. Par conséquent, les maximisations et minimisations du problème précédent sont inversées mais la logique reste identique.
-

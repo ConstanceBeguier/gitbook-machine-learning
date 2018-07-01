@@ -1,7 +1,7 @@
 # Réduction de dimension
 
-  - **Objectifs**: décrire/visualiser des données, les décorréler, les débruiter, améliorer les performances d'un apprentissage
-  - **Méthodes**: feature  selection (garder les features qui sont le plus correlés à la target), feature  derivation (créer des nouvelles features), clustering (regrouper ensemble des données similaires)
+- **Objectifs**: décrire/visualiser des données, les décorréler, les débruiter, améliorer les performances d'un apprentissage
+- **Méthodes**: feature  selection (garder les features qui sont le plus correlés à la target), feature  derivation (créer des nouvelles features), clustering (regrouper ensemble des données similaires)
 
 Dans la suite, X est une matrice contenant l'ensemble des données dont chaque ligne correspond à une donnée.
 

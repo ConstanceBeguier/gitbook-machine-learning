@@ -1,6 +1,6 @@
 # Apprentissage probabilistique
 
-## Modéle de mélange Gaussiens (Gaussian Mixture Models  GMM)
+## Modéle de mélange Gaussiens (Gaussian Mixture Models GMM)
 
   - Entrées: données non labellisées
   - Objectif: séparer les données en différentes classes en supposant que chaque classe peut être représentée par une gaussienne. L'objectif est de trouver les paramètres de ces gaussiennes. Si nous ne connaissons pas le nombre de classes, il faut tester différentes valeurs et voir ce qui donne le meilleur résultat. 

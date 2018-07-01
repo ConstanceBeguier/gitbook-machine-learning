@@ -40,7 +40,7 @@ $$\beta _{s,t}$$: proba d'être dans l'état s à t et d'observer par la suite $
 	  - Forward calculs: $$v_{s,t} = b_{s,o_{t}} max_{i} v_{i,t-1} a_{i,s}$$
 	  - Backward calculs: Suivre le chemin ayant le plus grand $$v_{s,T}$$
 
-## Baum  Welch  Algorithm (problème 3)
+## Baum Welch Algorithm (problème 3)
 
   - **Principe**: Expectation-Maximization (EM) méthode pour adapter les paramètres du modèle $$(a_{i,j},b_{i,k})$$ à partir d'un grand nombre de séquences d'observations $$(o_{1},o_{2},...,o_{T})$$
 	  - Expectation: Utiliser alternativement les algorithmes forward et backward pour estimer les probabilités de transitions et d'émissions

@@ -1,6 +1,7 @@
 # Réseau de neurones
 
-Rappel: le perceptron permet uniquement de classifier des données linéairement séparables: $$h_{W,B}(X) = \begin{cases} 0 & \text{ si } W^T X + B < 0 \\ 1 & \text{ si } W^T X + B \geq 0 \end{cases}$$
+Rappel: le perceptron permet uniquement de classifier des données linéairement séparables:
+$$h_{W,B}(X) = \begin{cases} 0 & \text{ si } W^T X + B < 0 \\ 1 & \text{ si } W^T X + B \geq 0 \end{cases}$$
 
 ## Multi-Layer Perceptron  MLP
 

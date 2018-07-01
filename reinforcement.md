@@ -24,4 +24,3 @@ $$Q(s,a)$$ est une estimation de la récompense lorsque nous appliquons l'action
 
 Identique au Q-learning sauf pour la mise à jour de $$Q(s,a)$$: 
 $$Q(s,a) = Q(s,a) + \mu (r + \gamma Q(s', a') - Q(s,a)$$ où $$a'$$ est l'action effectuée sur le prochain état en suivant la même méthode (soft-max)
-
