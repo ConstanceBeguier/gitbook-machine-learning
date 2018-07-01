@@ -5,7 +5,8 @@ Uniquement pour résoudre les problèmes linéairement séparables: possibilité
 **Perceptron** (réseau de neurones basique): il permet uniquement de classifier des données linéairement séparables: 
   - **Entrées**: couples $$(X,y)$$ avec $$y \in \{0,1\}$$
   - **Objectif**: Trouver $$W$$ et $$b$$ tel que $$h_{W,b}(X) = W^T X + b \geq 0$$ si $$y=1$$ et $$h_{W,b}(X) = W^T X + b < 0$$ si $$y=0$$
-  - **Solution** basée sur une descente de gradient: $$w_i = w_i - \alpha(s - y)x_i$$ avec $$s = \begin{cases} 0 & \text{ si } h_{W,b}(X)<0 \\ 1 & \text{ si } h_{W,b}(X) \geq 0 \end{cases}$$ et $$h_{W,b}(X) = W^T X + b$$
+  - **Solution** basée sur une descente de gradient: $$w_i = w_i - \alpha(s - y)x_i$$ avec 
+$$s = \begin{cases} 0 & \text{ si } h_{W,b}(X)<0 \\ 1 & \text{ si } h_{W,b}(X) \geq 0 \end{cases}$$ et $$h_{W,b}(X) = W^T X + b$$
   - **Astuces** pour améliorer ou accélérer l'apprentissage
 	  - Learning rate: $$0.1 < \alpha < 0.4$$
 	  - Ajout d'un biais: ajout d'une coordonnée égale à -1 à chaque vecteur d'entrées X (et de son poids associés $$w_0$$). Cela permet de faire varier le seuil.
