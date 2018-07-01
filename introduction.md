@@ -56,7 +56,7 @@ fois et conserver l’apprentissage qui a obtenu le meilleur score de validation
   la diagonale de la matrice représentent le nombre d’éléments correctement classifiés. L’accuracy est donc égale à la somme des valeurs de la
   diagonale divisée par la somme de tous les éléments.
 * **Sensibilité \(recall\), Spécificité, Précision :** 
-  $$recall = TP/(TP + FN )$$
+  {% math %}recall = TP/(TP + FN ){% endmath %}
   $$specificity = TN/(TN + FP )$$
   $$precision = TP/(TP + FP )$$
   avec $$TP$$ \(resp. $$TN$$ \) le nombre de vrais positifs \(resp. négatifs\), $$FP$$ \(resp. $$FN$$\) le nombre de faux positifs \(resp. négatifs\) 

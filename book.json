@@ -4,7 +4,7 @@
     	"website": "assets/continuum/cms.css"
     },
     "plugins": [
-	    "katex",
+	    "mathjax",
 	    "github@2.0.0"
     ],
     "pluginsConfig": {
