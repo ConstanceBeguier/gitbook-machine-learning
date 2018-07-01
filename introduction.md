@@ -64,12 +64,12 @@ fois et conserver l’apprentissage qui a obtenu le meilleur score de validation
 ![](/images/F1score_new.png)
 
 * **F1-score :** $$2 \cdot precision \cdot recall/(precision + recall)$$
-* **Courbe de ROC \(Receiver Operator Characteristic:** courbe du pourcentage de vrais positifs \(sur l’axe y\) par rapport au pourcentage de
+* **Courbe de ROC \(Receiver Operator Characteristic\):** courbe du pourcentage de vrais positifs \(sur l’axe y\) par rapport au pourcentage de
   faux positifs \(sur l’axe x\). Cette courbe permet de comparer différents paramétrages d’un même classifieur ou de comparer différents classifieurs. L’aire sous la courbe ROC \(area under the curve AUC\) est une bonne métrique représentant le classifieur.
 * **Minkowski metric:** $$L_k(x,y)=\sum _i (|x_i - y_i |^k)^{1/k}$$
   * k = 1 : distance de Manhattan
   * k = 2 : distance Euclidienne
-  * Si $$average(X_1 , ..., X_n ) = argmin_Y \sum_i dist(X_i,Y)$$, alors cette valeur est la médiane dans pour k = 1 et la moyenne pour k = 2.
+  * Si $$average(X_1 , ..., X_n ) = argmin_Y \sum_i dist(X_i,Y)$$, alors cette valeur est la médiane pour k = 1 et la moyenne pour k = 2.
 
 ## Quelques rappels de probabilité
 
@@ -78,12 +78,12 @@ fois et conserver l’apprentissage qui a obtenu le meilleur score de validation
 * **Prior probability:** $$P (C_i )$$
 * **Class conditionnal probability:** $$P (X_j |C_i )$$
 * **Maximum a posteriori \(MAP\):** $$argmax_i P(C_i |X)$$ : quelle est la classe la plus probable pour une entrée donnée \(vecteur de features\)
-* **Naive Bayes’ Classifier:** MAP en suppossant Q que les features sont indépendantes entre elles. Donc $$P(X|C_i ) = \prod_j P(X_j |C_i )$$. Et donc $$argmax_i P(C_i | X) = argmax_i P(C_i)$$ et $$\prod_j P(X_j | C_i) / P(X) = argmax_i  P(C_i) \prod_j P(X_j | C_i)$$
+* **Naive Bayes’ Classifier:** MAP en suppossant que les features sont indépendantes entre elles. Donc $$P(X|C_i ) = \prod_j P(X_j |C_i )$$. Et donc $$argmax_i P(C_i | X) = argmax_i P(C_i)$$ et $$\prod_j P(X_j | C_i) / P(X) = argmax_i  P(C_i) \prod_j P(X_j | C_i)$$
 
 ## Quelques rappels de statistiques
 
 * **Espérance \(expectation\) :** similaire à une moyenne en prenant en compte les probabilités : $$E[f (X)] = \sum_i f (X_i ) \cdot P (X_i )$$
-* **Variance :** mesure de dispersion : $$var(X) = E[X-E[X]]^2 = E[X_{\mu}]^2$$ où $$\mu$$ est la moyenne/espérance de $$X$$
+* **Variance :** mesure de dispersion : $$var(X) = E[X-E[X]]^2 = E[X - \mu]^2$$ où $$\mu$$ est la moyenne/espérance de $$X$$
 * **Ecart type \(standard deviation std\) :** $$\sigma = \sqrt{var(X)}$$
 * **Covariance :** $$cov(X,Y)=E[(X-E[X])(Y-E[Y])]$$. Si $$X$$ et $$Y$$ sont indépendantes, $$cov(X, Y ) = 0$$.
 * **Gaussienne ou distribution normale :** $$p(x) = \frac{1}{\sqrt{2 \pi \sigma}} exp( \frac{-(x-\mu)^2}{2 \sigma^2})$$
