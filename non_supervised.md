@@ -18,3 +18,4 @@ $$S_i = \{ x_p : dist(x_p, m_i) \leq dist(x_p, m_j), \forall 1 \leq j \leq k \}$
 Attention cet algorithme est sensible aux minima locaux. Il peut être utile de le lancer plusieurs fois avec des initialisations différentes et de conserver l'apprentissage qui a une erreur globale minimale (somme de la distance de chacun des points de la base d'apprentissage à son centre le plus proche).
 
 Cet algorithme est aussi utilisé pour réduire le bruit dans un ensemble de données en remplaçant chaque donnée en entrée par son centre le plus proche.
+

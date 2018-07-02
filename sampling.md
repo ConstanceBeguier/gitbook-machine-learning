@@ -19,3 +19,4 @@
 Principe: On se place dans un espace vectoriel $$\epsilon $$ de dimension finie $$n$$. On veut générer aléatoirement des vecteurs $$x$$ suivant une distribution de probabilité $$\pi$$. On veut donc avoir une suite de $$N$$ vecteurs $$(x_{0},x_{1}, ... ,x_{N-1})$$ telle que la distribution des $$x_{i}$$ approche $$\pi$$.
 
 Les méthodes de Monte-Carlo par chaînes de Markov consistent à générer un vecteur $$x_{i}$$ uniquement à partir de la donnée du vecteur $$x_{i-1}$$ ; c'est donc un processus sans mémoire, ce qui caractérise les chaînes de Markov. Il faut donc trouver un générateur aléatoire avec une distribution de probabilité $$q_{x_{i-1}}$$ qui permette de générer $$x_{i}$$ à partir de $$x_{i-1}$$. On remplace ainsi le problème de génération avec une distribution $$\pi$$ par $$N$$ problèmes de génération avec des distributions $$q_{x_{i}}$$, que l'on espère plus simples.
+
